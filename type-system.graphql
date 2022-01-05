@@ -1,0 +1,43 @@
+#TYPE-SYSTEM
+
+type Query{
+    pizzas(name:String):[pizza]
+    pizzasId(id:Int):[pizza]
+}
+
+
+type Mutation{
+    createPizza(pizza:pizzaInput):pizza
+    updatePizza(pizza:pizzaUpdate):pizza
+    deletePizza(pizza:pizzaUpdate):pizza
+}
+input pizzaInput {    
+    piz_name: String,
+    piz_origin: String,
+    piz_state: Boolean,
+    ingredientes:[Int]
+}
+input pizzaUpdate {   
+    piz_id:Int! 
+    piz_name: String,
+    piz_origin: String,
+    piz_state: Boolean,
+    ingredientes:[Int]
+}
+
+type pizza{
+    piz_id: Int!,
+    piz_name: String,
+    piz_origin: String,
+    piz_state: Boolean,
+    ingredientes:[ingrediente]
+}
+
+
+type ingrediente{
+    ing_id: Int!,
+    ing_name: String,
+    ing_calories: String,
+    ing_state: Boolean
+}
+

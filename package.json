@@ -1,0 +1,21 @@
+{
+  "name": "03-api-graphql-pizza",
+  "version": "1.0.0",
+  "description": "API-GRAPHQL PIZZA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Franklin Flores",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "graphql": "^15.7.2",
+    "graphql-import": "^1.0.2",
+    "graphql-server-express": "^1.4.1",
+    "graphql-tools": "^8.2.0",
+    "nodemon": "^2.0.15",
+    "pg-promise": "^10.11.1"
+  }
+}
